@@ -57,22 +57,49 @@
       /* Donut-Specific Styles */
       .guava-lava {
         color: #ff4500; /* Bright reddish-orange for Guava Lava */
-        font-family: 'Comic Sans MS', cursive; /* Fun, playful font */
+        font-family: 'Comic Sans MS', cursive;
       }
 
       .red-apple-fritter {
         color: #b22222; /* Deep red for Red Apple Fritter */
-        font-family: 'Georgia', serif; /* Classy serif font */
+        font-family: 'Georgia', serif;
       }
 
       .maple-seaside {
         color: #8b4513; /* Maple syrup brown */
-        font-family: 'Courier New', monospace; /* Monospaced font for a unique look */
+        font-family: 'Courier New', monospace;
       }
 
       .coconut-boston-cream {
         color: #6a5acd; /* Rich purple for Coconut Boston Cream */
-        font-family: 'Verdana', sans-serif; /* Clean, modern font */
+        font-family: 'Verdana', sans-serif;
+      }
+
+      /* Footer Styles */
+      footer {
+        margin-top: 30px;
+        font-size: 14px;
+        color: #777;
+        position: relative;
+      }
+
+      /* Spinning Text Animation */
+      .spinning-text {
+        font-size: 20px;
+        font-weight: bold;
+        color: #ff6f00;
+        margin-top: 20px;
+        display: inline-block;
+        animation: spin 5s linear infinite;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
       }
     </style>
   </head>
@@ -101,6 +128,7 @@
 
     <footer>
       &copy; 2024 Paradise Concerts. All rights reserved.
+      <div class="spinning-text">BELT Technologies</div>
     </footer>
   </body>
 </html>
